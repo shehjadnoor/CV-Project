@@ -18,5 +18,8 @@ This project was developed as part of an Internet Programming course to practice
 - Clickable project and certification links
 - Organized folder structure
 
+  ##Live Demo
+  https://shehjadnoor.github.io/CV-Project/
+
 ## Author
 Shehjad Noor
