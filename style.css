@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.links {
+    margin-top: 6px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: 600;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.CV {
+    width: 800px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 28px;
+    color: #0066cc;
+}
+
+.info p {
+    margin: 4px 0;
+    color: #555;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+section h2 {
+    font-size: 20px;
+    color: #0066cc;
+    text-transform: uppercase;
+    border-top: 2px solid #0066cc;
+    border-bottom: 2px solid #0066cc;
+    padding: 6px 0;
+    margin: 25px 0 15px 0;
+}
+
+.skill-list {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.skill-list li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.skill-list li::marker {
+    color: #000000;
+}
+.project-list {
+    padding-left: 22px;
+    margin-top: 10px;
+}
+
+.project-list li {
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.project-list li::marker {
+    color: #000000;
+}
+.project-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+.email-link {
+    text-decoration: none;
+    color: #555;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
