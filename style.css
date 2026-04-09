@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f4f6f9;
     margin: 0;
     padding: 0;
 }
@@ -13,26 +13,32 @@ body {
     text-decoration: none;
     color: #0066cc;
     font-weight: 600;
+    transition: 0.2s;
 }
 
 .links a:hover {
     text-decoration: underline;
+    color: #004999;
 }
 
 .CV {
-    width: 800px;
+    max-width: 850px;
     margin: 40px auto;
     background-color: #ffffff;
     padding: 30px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
     padding-bottom: 20px;
     margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
 }
 
 .info h1 {
@@ -50,8 +56,8 @@ body {
     width: 120px;
     height: 120px;
     object-fit: cover;
-    border-radius: 6px;
-    border: 1px solid #ccc;
+    border-radius: 8px;
+    border: 2px solid #ccc;
 }
 
 section {
@@ -59,49 +65,42 @@ section {
 }
 
 section h2 {
-    font-size: 20px;
+    font-size: 18px;
     color: #0066cc;
     text-transform: uppercase;
-    border-top: 2px solid #0066cc;
     border-bottom: 2px solid #0066cc;
-    padding: 6px 0;
-    margin: 25px 0 15px 0;
+    padding-bottom: 5px;
+    margin: 25px 0 10px 0;
 }
 
-.skill-list {
-    padding-left: 22px;
-    margin-top: 10px;
+section p {
+    line-height: 1.5;
+    color: #444;
 }
 
-.skill-list li {
-    margin-bottom: 8px;
-    color: #333;
-}
-
-.skill-list li::marker {
-    color: #000000;
-}
+.skill-list,
 .project-list {
-    padding-left: 22px;
+    padding-left: 20px;
     margin-top: 10px;
 }
 
+.skill-list li,
 .project-list li {
     margin-bottom: 8px;
     color: #333;
 }
 
-.project-list li::marker {
-    color: #000000;
-}
 .project-link {
     text-decoration: none;
-    color: #000000;
+    color: #000;
+    font-weight: 600;
 }
 
 .project-link:hover {
     text-decoration: underline;
+    color: #0066cc;
 }
+
 .email-link {
     text-decoration: none;
     color: #555;
@@ -109,4 +108,30 @@ section h2 {
 
 .email-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .CV {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .photo img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .info h1 {
+        font-size: 24px;
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
 }
